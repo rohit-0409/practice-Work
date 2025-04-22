@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f0f0f0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #142F4E;
+    font-weight: bold;
+}
+
+.wrapper{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 420px;
+    padding: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.wrapper h1{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 25px;
+}
+
+.profile-section{
+    display: flex;
+}
+
+.profile-section img{
+    margin: 5px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit:cover;
+}
+
+.profile-section .account-details{
+    margin: 10px;
+}
+
+.account-details h3{
+    color: #142F4E;
+    font-size: 12px;
+}
+
+.account-details p{
+    color: #142F4E;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-group{
+    position: relative;
+    margin: 15px auto;
+    width: 100%;
+    /* border: 1px solid; */
+}
+
+.input-group label{
+    font-size: 12px;
+}
+
+.input-group input{
+    display: flex;
+    padding: 10px 30px; /* Add extra space on the left for the icon */
+    width: 100%;
+    height: 100%;
+    border: 1px solid #142F4E;
+    border-radius: 5px;
+}
+
+.input-group .bx-lock{
+    position: absolute;
+    display: flex;
+    left: 10px;
+    top: 50%;
+}
+
+.input-group .bx-hide{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    right: 10px;
+    top: 50%;
+    visibility: visible;
+}
+
+.input-group .bx-show{
+    position: absolute;
+    display: flex;
+    right: 10px;
+    top: 50%;
+    visibility: hidden;
+}
+
+.options .togglebtn{
+    display: flex;
+}
+
+.continue-btn button{
+    padding: 7px 10px;
+    background: #273c5f;
+    color: white;
+    border-radius: 5px;
+}
+
+a{
+    font-size: 14px;
+    color: #142F4E;
+}
+
+.options{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options .togglebtn{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    width: 20px;
+    height: 10px;
+}
+
+.togglebtn input{
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.togglebtn p{
+    white-space: nowrap; /* Prevents text from wrapping into the next line */
+    padding: 10px;
+    font-size: 12px;
+    transform: translateX(-20%);
+}
+
+.slider {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    background-color: white; /* <-- changed this from #ccc to white */
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid;
+    transform: translateX(-40%);
+}
+
+.slider:before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    left: 2px;
+    transition: .4s;
+    transform: translateY(-50%);
+    background-color: #142F4E; /* <-- changed this from #ccc to white */
+}
+
+.togglebtn input:checked + .slider::before {
+    transform: translate(20px, -50%);
+}
