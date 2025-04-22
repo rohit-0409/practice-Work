@@ -13,4 +13,6 @@ Don't ask me why im writing this here.
 
 # Date : 23-04-2025
 
-So far have used C#,c,Python,Java,lua but HTML and CSS felt the most stupid.
+- So far have used C#,c,Python,Java,lua but HTML and CSS felt the most stupid.
+
+ - Havent touched Js yet. Maybe after 2-3 more projects as im getting kind off comfortable with HTML and CSS.
