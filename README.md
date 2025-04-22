@@ -10,3 +10,7 @@ But now found this awesome website "iCodeThis" and it has like so many simple we
 Now, I'm using this site to for reference material to practice my HTML & CSS.
 
 Don't ask me why im writing this here.
+
+# Date : 23-04-2025
+
+So far have used C#,c,Python,Java,lua but HTML and CSS felt the most stupid.
