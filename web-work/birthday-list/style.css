@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #EEF3FA;
+}
+
+
+img {
+    width: 5vw; /* 10% of viewport width */
+    height: 5vw;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem #a2b7f665;
+}
+
+.wrapper h1{
+    font-size: 20px;
+    text-align: left;
+    align-self: flex-start; /* Add this */
+}
+
+.wrapper .list {
+    align-self: flex-start; /* Aligns the list box to the left of the wrapper */
+    margin: 20px 100px 20px 0;
+
+}
+
+
+.list ul{
+    list-style: none;
+}
+
+.wrapper .list .list-item{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    width: fit-content; /* or set a fixed width if you prefer */
+    margin: 5px;
+}
+
+.profile-info h1{
+    font-size: 12px;
+    color: #2E2E2E;
+}
+
+.profile-info p{
+    font-size: 10px;
+    color: #A0A0A0;
+}
+
+.view-all{
+    width: 100%;
+}
+
+.view-all button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: #ccc;
+    background: linear-gradient(to right, #F857A6, #FF5858);
+    color: white;
+    box-shadow: 0 0.5rem 1rem #a2b7f665;
+
+}
