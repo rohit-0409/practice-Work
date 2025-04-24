@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100vh;
+    align-items: center;
+    overflow: hidden;
+    background: #EEF3FA;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 0.5rem 1rem #a2b7f665;
+    border-radius: 2%;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper .container{
+    padding: 10%;    
+    overflow: hidden;
+    z-index: 1;
+}
+
+.wrapper .headers{
+    display: flex;
+    width: 100%; /* Ensure it spans the full width of the wrapper */
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.headers .requests{
+    font-size: 15px;
+}
+
+.headers .view-all{
+    font-size: 10px;
+    color: white;
+}
+
+img{
+    width: 20%;
+    height: 20%;
+    object-fit: cover;
+    /* border: 1px solid; */
+}
+
+ul {
+    list-style-type: none; /* Hides the list dots/bullets */
+    padding-left: 0; /* Removes the left padding from the list */
+}
+
+.list{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.list .list-item{
+    display: flex;
+    align-items: center;
+    padding: 2% 0%;
+    justify-content: space-between;
+    /* border: 1px solid; */
+}
+
+.list-item .profile-info{
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid; */
+    margin: 0 100px 0 0;
+    gap: 5%;
+    align-items: center; /* Vertically center the items */
+}
+
+
+.list-item .profile-pic img {
+    width: 40px; /* Control the image size */
+    height: 40px;
+    border-radius: 50%; /* Optional, for a rounded image */
+}
+
+
+.list-item .profile-info h1{
+    font-size: 12px;
+    white-space: nowrap; /* Prevents text from wrapping into multiple lines */
+}
+
+.list-item .profile-info p{
+    font-size: 8px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.wrapper .upper-bg{
+    padding: 60% 60%;
+    background: linear-gradient(#FF9555,#FE816D);
+    border-radius: 15%;
+    position: absolute;
+    transform: translate(60% , -50%) rotate(10deg);
+}
+
+.wrapper .lower-bg{
+    padding: 60% 60%;
+    background: linear-gradient(#FE816D,#FF9555);
+    border-radius: 15%;
+    position: absolute;
+    transform: translate(-10% , 85%) rotate(20deg);
+}
+
+.list-item button{
+    background-color: rgb(255, 247, 247);
+    border: none;
+    outline: none;
+    font-size: 10px;
+    padding: 4px 10px;
+    border-radius: 10%;
+    box-shadow: 0 0.2rem 1rem #627abf65;
+}
