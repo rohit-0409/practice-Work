@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #D8DAE2;
+}
+
+.wrapper{
+    width: 90vw;
+    max-width: 800px;
+    /* height: 50vh; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    /* overflow: hidden; */
+    background: #EEF0F2;
+    border-radius: 15px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 .5rem 1rem #c8c8c8;
+}
+
+.wrapper .top{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0 0 20px 0;
+    /* border: 1px solid; */
+}
+
+.wrapper .top h1{
+    font-size: 1.2rem;
+
+}
+
+.wrapper .top .options button{
+    border: 10px;
+    padding: 3px;
+    background: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    box-shadow: 0 .2rem .4rem #c8c8c8;
+}
+
+.wrapper .list{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.wrapper .list .item{
+    background: white;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+.wrapper .list .item .main-image{
+    width: 100%;
+    height: 20vh;
+    /* border: 1px solid; */
+    margin: 10px 0;
+}
+
+.wrapper .list .item .main-image img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper .list .item .other-images{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    gap: .2rem;
+}
+
+.wrapper .list .item .other-images img{
+    object-fit: cover;
+    border-radius: 10px;
+    width: 7.5vh;
+    height: 5vh;
+}
+
+.wrapper .list .item .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.wrapper .list .item .bottom p{
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+.wrapper .circle1{
+    position: absolute;
+    padding: 80px;
+    background: black;
+    z-index: -1;
+    transform: translate(300%,-80%);
+    border-radius: 50%;
+    background: #E7E7F1;
+}
+
+.wrapper .circle2{
+    position: absolute;
+    padding: 100px;
+    background: black;
+    z-index: -1;
+    transform: translate(50%,120%);
+    border-radius: 50%;
+    background: #E7E7F1;
+}
+
+.wrapper .list .item:hover {
+    transform: translateY(-5px);
+}
